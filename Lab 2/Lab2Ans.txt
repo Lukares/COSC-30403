@@ -1,0 +1,130 @@
+Inserting Employee 12345678
+Inserting Employee 34567890
+Inserting Employee 23456789
+Printing All Employees...
+T.Nute       (12345678)
+Planning        
+Supervisor        
+25.00
+S.Jones      (23456789)
+Marketing       
+Secretary         
+16.00
+B.Smith      (34567890)
+Shipping        
+ClerkI            
+17.50
+All Employees Displayed
+Inserting Employee 13456789
+Inserting Employee 1234567
+Printing Employee 34567890
+B.Smith      (34567890)
+Shipping        
+ClerkI            
+17.50
+Inserting Employee 34534565
+Inserting Employee 36323232
+Printing All Employees...
+B.Smith      (1234567)
+Cleaning        
+Supervisor        
+12.50
+T.Nute       (12345678)
+Planning        
+Supervisor        
+25.00
+J.Jones      (13456789)
+Design          
+Director          
+25.00
+S.Smith      (23456789)
+Manufacturing          
+Trainee         
+27.00
+H.Nelson     (34534565)
+Design          
+TeamLeaderI       
+26.50
+B.Smith      (34567890)
+Shipping        
+ClerkI            
+17.50
+P.Jones      (36323232)
+Design          
+TeamLeaderII      
+30.50
+All Employees Displayed
+Printing Employees in Department: Design
+J.Jones      (13456789)
+Design          
+Director          
+25.00
+H.Nelson     (34534565)
+Design          
+TeamLeaderI       
+26.50
+P.Jones      (36323232)
+Design          
+TeamLeaderII      
+30.50
+All Employees in: Design, Displayed
+Deleting Employee 23456789
+Employee 23456789deleted successfully
+Inserting Employee 232323
+Inserting Employee 45454545
+Inserting Employee 12121212
+Deleting Employee 11111111
+Employee 11111111 not found
+Employee 11111111deleted successfully
+Deleting Employee 13456789
+Employee 13456789deleted successfully
+Printing Employee 11111111
+Employee 11111111 not found
+Deleting Employee 23456789
+Employee 23456789 not found
+Employee 23456789deleted successfully
+Printing Employees in Department: Cleaning
+B.Smith      (1234567)
+Cleaning        
+Supervisor        
+12.50
+B.Gates      (12121212)
+Cleaning        
+JanitorII       
+ 3.50
+All Employees in: Cleaning, Displayed
+Printing Employees in Department: Operations
+All Employees in: Operations, Displayed
+Printing Employee 23456789
+Employee 23456789 not found
+Printing Employee 34534565
+H.Nelson     (34534565)
+Design          
+TeamLeaderI       
+26.50
+Deleting Employee 01234567
+Employee 01234567deleted successfully
+Printing All Employees...
+Y.Tittle     (232323)
+Marketing       
+Director          
+35.00
+B.Gates      (12121212)
+Cleaning        
+JanitorII       
+ 3.50
+T.Nute       (12345678)
+Planning        
+Supervisor        
+25.00
+H.Nelson     (34534565)
+Design          
+TeamLeaderI       
+26.50
+B.Smith      (34567890)
+Shipping        
+ClerkI            
+35.00
+P.Jones      (36323232)
+Design          
+TeamLe

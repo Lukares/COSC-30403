@@ -1,0 +1,188 @@
+unit Employees;
+
+interface
+uses Sysutils;
+
+Type
+		Employee = Record
+			surname, deptName, title : String[15];
+			ID : longint;
+			salary : Real;
+		End;
+
+		empPointer = ^empNode;
+
+		empNode = Record
+			empRecord : Employee;
+			next : empPointer;
+		End;
+
+		procedure beginLL();
+		procedure addEmployee(empRecord : Employee);
+        procedure printAllEmployees();
+		procedure printEmpData(emp : Employee);
+        procedure closeOutFile();
+
+Var
+		head, tail : empPointer;
+        outFile : TextFile;
+		sample : Employee; 
+
+implementation
+
+Procedure beginLL;
+Begin
+    assign(outFile, 'Lab2Ans.txt');
+    rewrite(outFile);
+    head := nil;
+//	new(head.next);
+    tail := head;
+End;
+
+(*
+Procedure addEmployee(empRecord : Employee);
+Var
+		node : empNode;
+Begin
+
+		writeln('Inserting employee . . . ');
+		node.empRecord := empRecord;
+		New(node.nodePtr);
+		If head = nil Then
+		Begin
+				New(head);
+				New(tail);
+				head^ := node;
+		End Else
+		Begin
+				tail^.nodePtr^ := node;
+		End;
+		tail^ := node;
+
+	writeln(node.empRecord.ID); 
+	writeln(node.empRecord.surname);
+	writeln(node.empRecord.deptName);
+	writeln(node.empRecord.title);
+	writeln(node.empRecord.salary:5:2); 
+End;
+*)
+
+procedure addEmployee(empRecord : Employee);
+var
+	current : empPointer;
+	node : empNode;
+begin
+	WriteLn('Adding Employee...');
+	node.empRecord := empRecord;
+	new(node.next);
+	If head = nil Then
+	Begin
+		New(head);
+		head^ := node;
+		exit
+	End;
+	current := head;
+	printEmpData(current^.empRecord);
+	//while (current^.next <> nil) and (current^.empRecord.ID < empRecord.ID) do
+	while current <> nil do
+	begin
+		try
+			current := current^.next;
+		except
+			on EAccessViolation do
+			begin
+				WriteLn(1);
+				break;
+			end;
+		end;
+	end;
+	WriteLn(5);
+	printEmpData(current^.empRecord);
+	(*
+	if Assigned(current^.nodePtr) then
+	begin
+		WriteLn(6);
+		node.nodePtr^ := current^.nodePtr^;
+	end;
+	WriteLn(7); *)
+	current^.next^ := node;
+end;
+
+(*
+Procedure InsertRecordByID(ID : Integer; empRecord : Employee);
+Var
+	TempPtr : empPointer;
+	Node, TempNode : empNode;
+	Done : Boolean;
+
+Begin
+	Done := False;
+	If head = nil Then
+		Exit;
+	TempPtr := head;
+	Node.empRecord := empRecord;
+	New(Node.nodePtr);
+	
+	If (TempPtr^.empRecord.ID = ID) Then
+	Begin
+		TempNode := head^;
+		head^ := Node;
+		Node.nodePTr^ := TempNode;
+		Done := True;
+	End;
+	
+	While not Done do
+	Begin
+		If (TempPtr^.empRecord.ID = ID) Then
+			Break;
+		If (TempPtr^.nodePtr^.nodePtr = nil) Then
+		Begin
+			Done := True;
+			Break;
+		End;
+		TempPtr := TempPtr^.nodePtr;
+	End;
+	
+	If not Done Then
+	Begin
+		TempNode := TempPtr^.nodePtr^;
+		Node.nodePtr^ := TempNode;
+		TempPtr^.nodePtr^ := Node;
+	End; 
+End;*)
+procedure printAllEmployees();
+var
+    tempPtr : empPointer;
+begin
+    WriteLn('Printing All Employees...');
+    WriteLn(outFile, 'Printing All Employees');
+    tempPtr := head;
+    while tempPtr <> nil do
+    begin
+		printEmpData(tempPtr^.empRecord);
+        tempPtr := tempPtr^.next;
+    end;
+    WriteLn('All Employees Displayed');
+    WriteLn(outFile, 'All Employees Displayed');
+end;
+
+procedure printEmpData(emp : Employee);
+var
+	line : String;
+begin
+	line := '';
+	line := line + emp.surname;
+	line := line + ' (' + IntToStr(emp.ID) + ')';
+	WriteLn(line);
+	WriteLn(outFile, line);
+	WriteLn(outFile, emp.deptName);
+	WriteLn(outFile, emp.title);
+	WriteLn(outFile, emp.salary);
+end;
+
+procedure closeOutFile();
+begin
+    close(outFile);
+end;
+
+End.

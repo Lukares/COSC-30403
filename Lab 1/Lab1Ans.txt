@@ -1,0 +1,164 @@
+ Inserting employee     12345678
+ Inserting employee     34567890
+ Inserting employee     23456789
+ All Employees:
+ T.Nute                          (    12345678 )
+ Department: Planning                       
+ Position: Supervisor                     
+Salary:    25.00
+ S.Jones                         (    23456789 )
+ Department: Marketing                      
+ Position: Secretary                      
+Salary:    16.00
+ B.Smith                         (    34567890 )
+ Department: Shipping                       
+ Position: ClerkI                         
+Salary:    17.50
+ All Employees Displayed.
+ Inserting employee     13456789
+ Inserting employee      1234567
+ Printing information for     34567890
+ B.Smith                         (    34567890 )
+ Department: Shipping                       
+ Position: ClerkI                         
+Salary:    17.50
+ Updating employee last name . . .
+ Updating employee salary . . .
+ Updating employee job title . . .
+ Updating employee department name . . .
+ Updating employee last name . . .
+ Inserting employee     34534565
+ Inserting employee     36323232
+ All Employees:
+ B.Smith                         (     1234567 )
+ Department: Cleaning                       
+ Position: Supervisor                     
+Salary:    12.50
+ T.Nute                          (    12345678 )
+ Department: Planning                       
+ Position: Supervisor                     
+Salary:    25.00
+ J.Jones                         (    13456789 )
+ Department: Design                         
+ Position: Director                       
+Salary:    25.00
+ S.Smith                         (    23456789 )
+ Department: Manufacturing                  
+ Position: Trainee                        
+Salary:    27.00
+ H.Nelson                        (    34534565 )
+ Department: Design                         
+ Position: TeamLeaderI                    
+Salary:    26.50
+ B.Smith                         (    34567890 )
+ Department: Shipping                       
+ Position: ClerkI                         
+Salary:    17.50
+ P.Jones                         (    36323232 )
+ Department: Design                         
+ Position: TeamLeaderII                   
+Salary:    30.50
+ All Employees Displayed.
+ Displaying all employees in Design                 
+ J.Jones                         (    13456789 )
+ Department: Design                         
+ Position: Director                       
+Salary:    25.00
+ H.Nelson                        (    34534565 )
+ Department: Design                         
+ Position: TeamLeaderI                    
+Salary:    26.50
+ All employees in Design                  displayed
+ Deleting employee     23456789
+ Inserting employee       232323
+ Inserting employee     45454545
+ Updating employee salary . . .
+ Inserting employee     12121212
+ Updating employee job title . . .
+ Deleting employee     11111111
+ Could not find employee     11111111
+ Deleting employee     13456789
+ Printing information for     11111111
+ Cannot find employee     11111111
+ Deleting employee     23456789
+ Could not find employee     23456789
+ Displaying all employees in Cleaning               
+ B.Smith                         (     1234567 )
+ Department: Cleaning                       
+ Position: Supervisor                     
+Salary:    12.50
+ B.Gates                         (    12121212 )
+ Department: Cleaning                       
+ Position: JanitorII                      
+Salary:     3.50
+ All employees in Cleaning                displayed
+ Displaying all employees in Operations             
+ All employees in Operations              displayed
+ Printing information for     23456789
+ Cannot find employee     23456789
+ Printing information for     34534565
+ H.Nelson                        (    34534565 )
+ Department: Design                         
+ Position: TeamLeaderI                    
+Salary:    26.50
+ Deleting employee      1234567
+ All Employees:
+ Y.Tittle                        (      232323 )
+ Department: Marketing                      
+ Position: Director                       
+Salary:    35.00
+ B.Gates                         (    12121212 )
+ Department: Cleaning                       
+ Position: JanitorII                      
+Salary:     3.50
+ T.Nute                          (    12345678 )
+ Department: Planning                       
+ Position: Supervisor                     
+Salary:    25.00
+ H.Nelson                        (    34534565 )
+ Department: Design                         
+ Position: TeamLeaderI                    
+Salary:    26.50
+ B.Smith                         (    34567890 )
+ Department: Shipping                       
+ Position: ClerkI                         
+Salary:    35.00
+ P.Jones                         (    36323232 )
+ Department: Design                         
+ Position: TeamLeaderII                   
+Salary:    30.50
+ T.Tunes                         (    45454545 )
+ Department: Shipping                       
+ Position: ClerkII                        
+Salary:     3.00
+ All Employees Displayed.
+ All Employees:
+ Y.Tittle                        (      232323 )
+ Department: Marketing                      
+ Position: Director                       
+Salary:    35.00
+ B.Gates                         (    12121212 )
+ Department: Cleaning                       
+ Position: JanitorII                      
+Salary:     3.50
+ T.Nute                          (    12345678 )
+ Department: Planning                       
+ Position: Supervisor                     
+Salary:    25.00
+ H.Nelson                        (    34534565 )
+ Department: Design                         
+ Position: TeamLeaderI                    
+Salary:    26.50
+ B.Smith                         (    34567890 )
+ Department: Shipping                       
+ Position: ClerkI                         
+Salary:    35.00
+ P.Jones                         (    36323232 )
+ Department: Design                         
+ Position: TeamLeaderII                   
+Salary:    30.50
+ T.Tunes                         (    45454545 )
+ Department: Shipping                       
+ Position: ClerkII                        
+Salary:     3.00
+ All Employees Displayed.

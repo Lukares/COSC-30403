@@ -1,0 +1,59 @@
+Program Main;
+uses Employees, Sysutils;
+
+Var
+		exampleEmp : Employee;
+		inFile : TextFile;
+		line , cmd : String;
+
+function employeeFromLine (s: String) : Employee;
+var
+    nEmp : Employee;
+Begin
+    nEmp.ID := StrToInt(copy(s, 0, 9));
+    s := copy (s, 11, length(s));
+    nEmp.surname := copy (s, 0, 12);
+    s := copy (s, 13, length(s));
+    Nemp.deptName := copy (s, 0, 17);
+    s := copy (s, 17, length(s));
+    nEmp.title := copy (s, 0, 19);
+    s := copy (s, 19, length(s));
+    nEmp.salary := StrToFloat(copy (s, 0, length(s)));
+    Exit(nEmp);
+End;
+
+Begin
+
+beginLL();
+assign(inFile, 'Lab2Data.txt');
+
+	reset(inFile);
+ 
+    while not eof(inFile) do
+    begin
+    	readln(inFile, line);
+    	cmd := copy (line, 0, 2);
+        line := copy(line, 3, Length(line));
+        if cmd = 'IN' then
+        begin
+            addEmployee(employeeFromLine(line));
+            (*end else
+        if cmd = 'PA' then
+        begin
+            printAllEmployees();*)
+        end;
+    end;
+
+    Close(inFile);
+
+	exampleEmp.ID := 69696969;
+	exampleEmp.surname := 'Blake Chodas';
+	exampleEmp.deptName := 'Choders';
+	exampleEmp.salary := 69.69;
+	exampleEmp.title := 'The Chode';
+
+addEmployee(exampleEmp);
+
+closeOutFile();
+
+End.
