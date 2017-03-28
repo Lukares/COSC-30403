@@ -1,0 +1,76 @@
+Printing all Employees...
+Printing information for Employee  12345678
+T.Nute ( 12345678) Planning -> Supervisor [$25.00]
+Printing information for Employee  23456789
+S.Jones ( 23456789) Marketing -> Secretary [$16.00]
+Printing information for Employee  34567890
+B.Smith ( 34567890) Shipping -> ClerkI [$17.50]
+All Employees displayed
+Printing information for Employee  34567890
+B.Smith ( 34567890) Shipping -> ClerkI [$17.50]
+Updating name . . .
+Updating pay rate for employee . . .
+Updating title for employee . . .
+Updating department for employee . . .
+Updating name . . .
+Printing all Employees...
+Printing information for Employee  1234567
+B.Smith ( 1234567) Cleaning -> Supervisor [$12.50]
+Printing information for Employee  12345678
+T.Nute ( 12345678) Planning -> Supervisor [$25.00]
+Printing information for Employee  13456789
+J.Jones ( 13456789) Design -> Director [$25.00]
+Printing information for Employee  23456789
+S.Smith ( 23456789) Manufacturing -> Trainee [$27.00]
+Printing information for Employee  34534565
+H.Nelson ( 34534565) Design -> TeamLeaderI [$26.50]
+Printing information for Employee  34567890
+B.Smith ( 34567890) Shipping -> ClerkI [$17.50]
+Printing information for Employee  36323232
+P.Jones ( 36323232) Design -> TeamLeaderII [$30.50]
+All Employees displayed
+Printing all Employees in Design
+Printing information for Employee  13456789
+J.Jones ( 13456789) Design -> Director [$25.00]
+Printing information for Employee  34534565
+H.Nelson ( 34534565) Design -> TeamLeaderI [$26.50]
+Printing information for Employee  36323232
+P.Jones ( 36323232) Design -> TeamLeaderII [$30.50]
+All Employees in Design displayed
+Deleting employee. . . 
+Updating pay rate for employee . . .
+Updating title for employee . . .
+Deleting employee. . . 
+Could not find employee
+Deleting employee. . . 
+Employee not found.
+Deleting employee. . . 
+Could not find employee
+Printing all Employees in Cleaning
+Printing information for Employee  1234567
+B.Smith ( 1234567) Cleaning -> Supervisor [$12.50]
+Printing information for Employee  12121212
+B.Gates ( 12121212) Cleaning -> JanitorII [$3.50]
+All Employees in Cleaning displayed
+Printing all Employees in Operations
+All Employees in Operations displayed
+Employee not found.
+Printing information for Employee  34534565
+H.Nelson ( 34534565) Design -> TeamLeaderI [$26.50]
+Deleting employee. . . 
+Printing all Employees...
+Printing information for Employee  232323
+Y.Tittle ( 232323) Marketing -> Director [$35.00]
+Printing information for Employee  12121212
+B.Gates ( 12121212) Cleaning -> JanitorII [$3.50]
+Printing information for Employee  12345678
+T.Nute ( 12345678) Planning -> Supervisor [$25.00]
+Printing information for Employee  34534565
+H.Nelson ( 34534565) Design -> TeamLeaderI [$26.50]
+Printing information for Employee  34567890
+B.Smith ( 34567890) Shipping -> ClerkI [$35.00]
+Printing information for Employee  36323232
+P.Jones ( 36323232) Design -> TeamLeaderII [$30.50]
+Printing information for Employee  45454545
+T.Tunes ( 45454545) Shipping -> ClerkII [$3.00]
+All Employees displayed
